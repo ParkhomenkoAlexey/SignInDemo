@@ -23,17 +23,14 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     fileprivate func setupSignInButton() {
         let signInButton = GIDSignInButton(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
-        signInButton.center = view.center
         signInButton.style = .iconOnly
+        signInButton.center = view.center
         view.addSubview(signInButton)
-        
     }
     
     @objc func signOutButtonTapped() {
         GIDSignIn.sharedInstance()?.signOut()
         print("123")
     }
-
-
 }
 

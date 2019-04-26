@@ -12,10 +12,7 @@ import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
-    
-
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GIDSignIn.sharedInstance().clientID = "313857215427-1jcrlhinj8g9apbolhcqefgsjvg8s419.apps.googleusercontent.com"
@@ -39,7 +36,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             print("fullName: \(fullName), image: \(image)")
         }
     }
-
-
 }
 
